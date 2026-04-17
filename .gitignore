@@ -1,0 +1,22 @@
+# Dependencies & build
+node_modules/
+.next/
+out/
+dist/
+*.tsbuildinfo
+
+# Env & secrets
+.env
+.env.*
+!.env.example
+
+# Vercel
+.vercel
+
+# OS & editor
+.DS_Store
+*.swp
+.idea/
+
+# Debug
+npm-debug.log*
