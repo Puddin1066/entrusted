@@ -27,4 +27,4 @@ git remote add origin https://github.com/Puddin1066/entrusted.git
 git push -u origin main
 ```
 
-In [Vercel](https://vercel.com), connect this repo and set **Root Directory** to `entrusted-site`.
+In [Vercel](https://vercel.com), connect this repo. The repo includes a root [`vercel.json`](./vercel.json) so install/build run inside `entrusted-site`. Alternatively, set **Root Directory** to `entrusted-site` in the project settings and you can remove or simplify `vercel.json`.
