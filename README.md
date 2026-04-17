@@ -27,4 +27,14 @@ git remote add origin https://github.com/Puddin1066/entrusted.git
 git push -u origin main
 ```
 
-In [Vercel](https://vercel.com), connect this repo. The root [`package.json`](./package.json) lists `next` so Vercel detects Next.js; [`vercel.json`](./vercel.json) runs install/build in `entrusted-site/`. You can instead set **Root Directory** to `entrusted-site` and drop the custom install/build commands.
+## Vercel (required)
+
+The Next.js app is in **`entrusted-site/`**, not the repo root. Vercel must use that folder as the project root so `next build` writes `.next` in the right place.
+
+1. Open **[Vercel](https://vercel.com)** → your **entrusted** project → **Settings** → **General**.
+2. Under **Root Directory**, click **Edit**, set it to **`entrusted-site`**, then **Save**.
+3. **Deployments** → **Redeploy** the latest commit (or push a new commit).
+
+Do **not** add a repo-root `vercel.json` with custom install/build unless you know you need it—**Root Directory** is the supported fix for this layout.
+
+After this, GitHub’s Vercel check should pass on new deployments.
