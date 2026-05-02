@@ -1,10 +1,10 @@
 {
   "name": "entrusted-pereira",
   "private": true,
-  "description": "Monorepo root. The Next.js app lives in entrusted/. On Vercel, set Root Directory to entrusted.",
+  "description": "Monorepo root. Next.js app in entrusted/. Vercel: set Root Directory to entrusted (recommended), or deploy from repo root (build copies entrusted/.next to .next).",
   "scripts": {
     "dev": "npm run dev --prefix entrusted",
-    "build": "npm run build --prefix entrusted",
+    "build": "npm run build --prefix entrusted && node -e \"const fs=require('node:fs');fs.rmSync('.next',{recursive:true,force:true});fs.cpSync('entrusted/.next','.next',{recursive:true})\"",
     "start": "npm run start --prefix entrusted",
     "lint": "npm run lint --prefix entrusted"
   }

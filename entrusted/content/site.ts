@@ -27,7 +27,7 @@ export const site = {
   ] as const,
   ctaPrimary: "Schedule Consultation",
   contactPlaceholder: {
-    email: "hello@entrustedschoolpsychology.com",
+    email: "cpereira@entrustedsps.com",
     phone: "(000) 000-0000",
     responseTime: "We typically respond within 1–2 business days.",
     serviceArea: "Massachusetts & Rhode Island · Based in Blackstone, MA",
