@@ -1,7 +1,7 @@
 {
   "name": "entrusted-pereira",
   "private": true,
-  "description": "Monorepo root. Vercel: set Root Directory to \"entrusted\". If the project root is the repo (misconfiguration), postinstall still installs app deps so build can find next.",
+  "description": "Monorepo root. Vercel: Root Directory \"entrusted\"; Framework Preset \"Next.js\" (not Other). entrusted/vercel.json forces nextjs. postinstall installs app deps if build runs from repo root.",
   "scripts": {
     "postinstall": "npm install --prefix entrusted",
     "dev": "npm run dev --prefix entrusted",
