@@ -1,7 +1,7 @@
 {
   "name": "entrusted-pereira",
   "private": true,
-  "description": "Monorepo root. Prefer Vercel Root Directory \"entrusted\". Root lists next so repo-root deploys are detected as Next.js (not static \"Other\"/public).",
+  "description": "Monorepo root. Vercel: Root Directory MUST be \"entrusted\" (Build & Deployment) so .next is at the project root; leave Output Directory empty.",
   "dependencies": {
     "next": "^16.2.4",
     "react": "^19.0.0",
@@ -10,7 +10,7 @@
   "scripts": {
     "postinstall": "npm install --prefix entrusted",
     "dev": "npm run dev --prefix entrusted",
-    "build": "npm run build --prefix entrusted",
+    "build": "npm run build --prefix entrusted && node ./scripts/vercel-next-output-root.mjs",
     "start": "npm run start --prefix entrusted",
     "lint": "npm run lint --prefix entrusted"
   }
