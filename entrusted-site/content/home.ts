@@ -81,6 +81,16 @@ export const homeContent = {
           "Cliff Pereira is an outstanding psychological evaluator. His file reviews are thorough, and he makes sure to assess all areas of suspected disability. Cliff easily develops rapport with students and puts them at ease during the evaluation. His reports are well-written, timely, and offer valuable recommendations that can be used throughout the IEP development process. Cliff is knowledgeable about special education in both MA and RI and is an integral part of eligibility determination. Cliff is a valued member of evaluation teams due to his calm nature and breadth of knowledge. A natural educator, Cliff is able to explain his testing results in a way that educates parents while also reassuring them at the same time. As someone who worked in a public school with Cliff for many years I wholeheartedly recommend his evaluation services.",
         attribution: "Shanon Stevens, Special Education Facilitator, Attleboro Public Schools",
       },
+      {
+        quote: `Cliff stood out immediately because of the way he truly understood my son. As a middle schooler on the autism spectrum, he often struggled to connect in school, and we felt like people were missing what made him unique.
+
+Cliff took the time to really get to know him and think outside the box. When he learned that my son was passionate about building RC cars, he actually incorporated that interest into his approach at school. That made all the difference. For the first time, my son felt seen, understood, and genuinely engaged. No one had ever done that before.
+
+What also meant so much to me as a parent was how available and supportive Cliff was. He always took the time to answer my questions and made sure I understood the process every step of the way. I never felt alone in it.
+
+Cliff didn't just evaluate my son, he connected with him and supported our whole family. I'm so grateful for the impact he had on our lives.`,
+        attribution: "Carrie S., Parent of Middle School Student, Central, MA",
+      },
     ],
     emptyMessage:
       "Client testimonials will be added soon. In the meantime, Entrusted can provide professional references upon request.",

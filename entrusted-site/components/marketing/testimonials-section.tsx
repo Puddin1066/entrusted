@@ -5,6 +5,14 @@ export type TestimonialItem = {
   attribution: string;
 };
 
+function quoteParagraphs(quote: string) {
+  return quote
+    .trim()
+    .split(/\n\n+/)
+    .map((p) => p.trim())
+    .filter(Boolean);
+}
+
 type Props = {
   title: string;
   sectionId: string;
@@ -26,16 +34,27 @@ export function TestimonialsSection({ title, sectionId, emptyMessage, items }: P
         </p>
       ) : (
         <ul className="mx-auto grid max-w-[900px] gap-10">
-          {items.map((t, i) => (
-            <li key={i}>
-              <blockquote className="border-l-4 border-entrusted-accent pl-6">
-                <p className="font-serif text-xl leading-relaxed text-entrusted-navy md:text-2xl">
-                  &ldquo;{t.quote}&rdquo;
-                </p>
-                <footer className="mt-4 text-sm font-medium text-stone-600">— {t.attribution}</footer>
-              </blockquote>
-            </li>
-          ))}
+          {items.map((t, i) => {
+            const paras = quoteParagraphs(t.quote);
+            const last = paras.length - 1;
+            return (
+              <li key={i}>
+                <blockquote className="border-l-4 border-entrusted-accent pl-6">
+                  {paras.map((para, j) => (
+                    <p
+                      key={j}
+                      className="font-serif text-xl leading-relaxed text-entrusted-navy md:text-2xl [&:not(:first-child)]:mt-4"
+                    >
+                      {j === 0 ? <>&ldquo;</> : null}
+                      {para}
+                      {j === last ? <>&rdquo;</> : null}
+                    </p>
+                  ))}
+                  <footer className="mt-4 text-sm font-medium text-stone-600">— {t.attribution}</footer>
+                </blockquote>
+              </li>
+            );
+          })}
         </ul>
       )}
     </SectionShell>
