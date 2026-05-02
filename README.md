@@ -5,18 +5,18 @@ This repository contains the product requirements document and the production we
 | Item | Location |
 |------|----------|
 | PRD | [`entrusted_prd_ixartz_vercel.md`](./entrusted_prd_ixartz_vercel.md) |
-| Next.js app (deploy this folder on Vercel) | [`entrusted-site/`](./entrusted-site/) |
+| Next.js app (deploy this folder on Vercel) | [`entrusted/`](./entrusted/) |
 
 **Run locally** (from this folder):
 
 ```bash
-npm install --prefix entrusted-site
+npm install --prefix entrusted
 npm run dev
 ```
 
-Then open [http://localhost:3000](http://localhost:3000). Or `cd entrusted-site && npm run dev`.
+Then open [http://localhost:3000](http://localhost:3000). Or `cd entrusted && npm run dev`.
 
-Full setup: [`entrusted-site/README.md`](./entrusted-site/README.md).
+Full setup: [`entrusted/README.md`](./entrusted/README.md).
 
 ## GitHub
 
@@ -29,10 +29,10 @@ git push -u origin main
 
 ## Vercel (required)
 
-The Next.js app is in **`entrusted-site/`**, not the repo root. Vercel must use that folder as the project root so `next build` writes `.next` in the right place.
+The Next.js app is in **`entrusted/`**, not the repo root. Vercel must use that folder as the project root so `next build` writes `.next` in the right place.
 
 1. Open **[Vercel](https://vercel.com)** → your **entrusted** project → **Settings** → **General**.
-2. Under **Root Directory**, click **Edit**, set it to **`entrusted-site`**, then **Save**.
+2. Under **Root Directory**, click **Edit**, set it to **`entrusted`**, then **Save**.
 3. **Deployments** → **Redeploy** the latest commit (or push a new commit).
 
 Do **not** add a repo-root `vercel.json` with custom install/build unless you know you need it—**Root Directory** is the supported fix for this layout.

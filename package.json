@@ -1,16 +1,11 @@
 {
   "name": "entrusted-pereira",
   "private": true,
-  "description": "Monorepo root. The Next.js app lives in entrusted-site/. Root lists next/react so Vercel detects Next.js when Root Directory is the repo root; prefer Root Directory = entrusted-site in project settings.",
-  "dependencies": {
-    "next": "^16.2.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
-  },
+  "description": "Monorepo root. The Next.js app lives in entrusted/. On Vercel, set Root Directory to entrusted.",
   "scripts": {
-    "dev": "npm run dev --prefix entrusted-site",
-    "build": "npm run build --prefix entrusted-site",
-    "start": "npm run start --prefix entrusted-site",
-    "lint": "npm run lint --prefix entrusted-site"
+    "dev": "npm run dev --prefix entrusted",
+    "build": "npm run build --prefix entrusted",
+    "start": "npm run start --prefix entrusted",
+    "lint": "npm run lint --prefix entrusted"
   }
 }

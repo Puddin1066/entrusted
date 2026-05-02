@@ -17,12 +17,21 @@ Open [http://localhost:3000](http://localhost:3000).
 
 1. Push this repo to GitHub (or connect the folder).
 2. In [Vercel](https://vercel.com), **Import** the repository.
-3. Set **Root Directory** to `entrusted-site` (recommended when the Git repo includes the monorepo root). That way install/build run in this app and Vercel picks up the Next.js output (`.next`) correctly.
-4. Under **Build & Development Settings**, keep **Framework Preset** as **Next.js** and leave **Output Directory** empty (default). Do not set it to `public`—that preset is for static HTML exports and triggers “No Output Directory named public” after a successful `next build`.
+3. **Required:** Under **Settings → General**, set **Root Directory** to `entrusted` (the folder that contains this `package.json` and `next.config.ts`). Vercel must run install/build there so it detects Next.js and outputs `.next` in the right place.
+4. Under **Build & Development Settings**, keep **Framework Preset** as **Next.js** and leave **Output Directory** empty (default). Do not set it to `public`.
 5. Add environment variables from `.env.example` (`NEXT_PUBLIC_SITE_URL`, `RESEND_API_KEY`, `CONTACT_FROM_EMAIL`, `CONTACT_TO_EMAIL`).
-6. Deploy. Production builds use `npm run build`.
+6. Deploy. With **Root Directory = `entrusted`**, Vercel uses this folder’s `package.json` and `vercel.json` (framework preset). Install defaults to `npm ci`, build to `npm run build`.
 
-The repo root `vercel.json` sets `"framework": "nextjs"` and an install command that runs `npm ci` at the repo root (so `node_modules/next` exists for Vercel’s version check) and then `npm ci --prefix entrusted-site` for the app.
+**Choose one deployment layout:**
+
+| Root Directory in Vercel | What to use |
+|--------------------------|-------------|
+| **`entrusted`** (recommended) | Leave **Output Directory** empty. Do **not** commit a conflicting `outputDirectory` in the parent folder. |
+| **`.`** (repo root) | The repo root `vercel.json` sets `outputDirectory` to `entrusted/.next` so Vercel finds the Next build. Prefer switching to **`entrusted`** and removing overrides. |
+
+**If you see “`.next` was not found at `/vercel/path0/.next`”:** You likely have Root Directory **`.`** with no output mapping, or **Root Directory `entrusted`** but **Output Directory** in the dashboard is set to something wrong—clear **Output Directory** (use default) and redeploy.
+
+**Existing project:** Open **Settings → General → Root Directory**, set **`entrusted`**, clear **Build & Development → Output Directory** override, save, **Redeploy**.
 
 ## Content and assets
 

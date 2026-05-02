@@ -221,7 +221,7 @@ Dynamic behavior should be limited to:
 Use this target structure after adapting the ixartz starter:
 
 ```txt
-entrusted-site/
+entrusted/
 ├─ app/
 │  ├─ layout.tsx
 │  ├─ page.tsx
