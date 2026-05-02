@@ -20,3 +20,6 @@ dist/
 
 # Debug
 npm-debug.log*
+
+# Local notes
+cliffnotes.md
