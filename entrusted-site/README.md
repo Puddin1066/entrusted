@@ -22,7 +22,7 @@ Open [http://localhost:3000](http://localhost:3000).
 5. Add environment variables from `.env.example` (`NEXT_PUBLIC_SITE_URL`, `RESEND_API_KEY`, `CONTACT_FROM_EMAIL`, `CONTACT_TO_EMAIL`).
 6. Deploy. Production builds use `npm run build`.
 
-The repo root `vercel.json` sets `"framework": "nextjs"` so deployments that build from the monorepo root still use the Next.js builder instead of a static `public/` output.
+The repo root `vercel.json` sets `"framework": "nextjs"` and an install command that runs `npm ci` at the repo root (so `node_modules/next` exists for Vercel’s version check) and then `npm ci --prefix entrusted-site` for the app.
 
 ## Content and assets
 
