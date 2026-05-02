@@ -17,9 +17,12 @@ Open [http://localhost:3000](http://localhost:3000).
 
 1. Push this repo to GitHub (or connect the folder).
 2. In [Vercel](https://vercel.com), **Import** the repository.
-3. Set **Root Directory** to `entrusted-site` if the repo root contains other files (e.g. the PRD at the parent level).
-4. Add environment variables from `.env.example` (`NEXT_PUBLIC_SITE_URL`, `RESEND_API_KEY`, `CONTACT_FROM_EMAIL`, `CONTACT_TO_EMAIL`).
-5. Deploy. Production builds use `npm run build`.
+3. Set **Root Directory** to `entrusted-site` (recommended when the Git repo includes the monorepo root). That way install/build run in this app and Vercel picks up the Next.js output (`.next`) correctly.
+4. Under **Build & Development Settings**, keep **Framework Preset** as **Next.js** and leave **Output Directory** empty (default). Do not set it to `public`—that preset is for static HTML exports and triggers “No Output Directory named public” after a successful `next build`.
+5. Add environment variables from `.env.example` (`NEXT_PUBLIC_SITE_URL`, `RESEND_API_KEY`, `CONTACT_FROM_EMAIL`, `CONTACT_TO_EMAIL`).
+6. Deploy. Production builds use `npm run build`.
+
+The repo root `vercel.json` sets `"framework": "nextjs"` so deployments that build from the monorepo root still use the Next.js builder instead of a static `public/` output.
 
 ## Content and assets
 
