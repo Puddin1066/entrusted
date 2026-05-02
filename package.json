@@ -1,8 +1,9 @@
 {
   "name": "entrusted-pereira",
   "private": true,
-  "description": "Monorepo root. On Vercel: Project Settings → Build & Deployment → Root Directory MUST be \"entrusted\" (do not deploy from repo root). Local: npm run dev --prefix entrusted.",
+  "description": "Monorepo root. Vercel: set Root Directory to \"entrusted\". If the project root is the repo (misconfiguration), postinstall still installs app deps so build can find next.",
   "scripts": {
+    "postinstall": "npm install --prefix entrusted",
     "dev": "npm run dev --prefix entrusted",
     "build": "npm run build --prefix entrusted",
     "start": "npm run start --prefix entrusted",
