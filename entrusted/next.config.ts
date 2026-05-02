@@ -10,6 +10,8 @@ import { fileURLToPath } from "node:url";
 const appRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)));
 
 const nextConfig: NextConfig = {
+  /** Default; explicit so Vercel always collects `.next` at the app root (Root Directory = `entrusted`). */
+  distDir: ".next",
   turbopack: {
     root: appRoot,
   },

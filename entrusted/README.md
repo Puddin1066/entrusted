@@ -20,18 +20,17 @@ Open [http://localhost:3000](http://localhost:3000).
 3. **Required:** Under **Settings → General**, set **Root Directory** to `entrusted` (the folder that contains this `package.json` and `next.config.ts`). Vercel must run install/build there so it detects Next.js and outputs `.next` in the right place.
 4. Under **Build & Development Settings**, keep **Framework Preset** as **Next.js** and leave **Output Directory** empty (default). Do not set it to `public`.
 5. Add environment variables from `.env.example` (`NEXT_PUBLIC_SITE_URL`, `RESEND_API_KEY`, `CONTACT_FROM_EMAIL`, `CONTACT_TO_EMAIL`).
-6. Deploy. With **Root Directory = `entrusted`**, Vercel uses this folder’s `package.json` and `vercel.json` (framework preset). Install defaults to `npm ci`, build to `npm run build`.
+6. Deploy. With **Root Directory = `entrusted`**, Vercel reads this folder’s `vercel.json` (`framework`, `installCommand`, `buildCommand`) and `package.json`.
 
-**Choose one deployment layout:**
+**Do not deploy from the repo root (`.`).** There is no root `vercel.json`; the Next app must be the Vercel **Root Directory** so `path0` is `entrusted` and `next build` writes `./.next` where Vercel expects it.
 
-| Root Directory in Vercel | What to use |
-|--------------------------|-------------|
-| **`entrusted`** (recommended) | Leave **Output Directory** empty. Do **not** commit a conflicting `outputDirectory` in the parent folder. |
-| **`.`** (repo root) | The repo root `vercel.json` sets `outputDirectory` to `entrusted/.next` so Vercel finds the Next build. Prefer switching to **`entrusted`** and removing overrides. |
+**If you see “`.next` was not found at `/vercel/path0/.next`”:**
 
-**If you see “`.next` was not found at `/vercel/path0/.next`”:** You likely have Root Directory **`.`** with no output mapping, or **Root Directory `entrusted`** but **Output Directory** in the dashboard is set to something wrong—clear **Output Directory** (use default) and redeploy.
+1. **Settings → General → Root Directory** = **`entrusted`** (not empty, not `.`).
+2. **Settings → Build & Development → Output Directory** — turn **off** any override; leave blank / default for Next.js (do not set `public`, `out`, or a custom path).
+3. **Redeploy** (ideally “Clear cache and redeploy” once).
 
-**Existing project:** Open **Settings → General → Root Directory**, set **`entrusted`**, clear **Build & Development → Output Directory** override, save, **Redeploy**.
+If **Output Directory** was ever set in the dashboard, it can override the Next.js builder and break `.next` detection—clearing it fixes most cases.
 
 ## Content and assets
 

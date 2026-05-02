@@ -35,6 +35,6 @@ The Next.js app is in **`entrusted/`**, not the repo root. Vercel must use that 
 2. Under **Root Directory**, click **Edit**, set it to **`entrusted`**, then **Save**.
 3. **Deployments** → **Redeploy** the latest commit (or push a new commit).
 
-Do **not** add a repo-root `vercel.json` with custom install/build unless you know you need it—**Root Directory** is the supported fix for this layout.
+Configuration for deploy lives in **`entrusted/vercel.json`**. The repo root has no `vercel.json`—set **Root Directory** to **`entrusted`** only.
 
 After this, GitHub’s Vercel check should pass on new deployments.
