@@ -1,15 +1,10 @@
 {
   "name": "entrusted-pereira",
   "private": true,
-  "description": "Monorepo root. Next.js app in entrusted/. Vercel: set Root Directory to entrusted (recommended), or deploy from repo root (build copies entrusted/.next to .next).",
-  "dependencies": {
-    "next": "^16.2.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
-  },
+  "description": "Monorepo root. On Vercel: Project Settings → Build & Deployment → Root Directory MUST be \"entrusted\" (do not deploy from repo root). Local: npm run dev --prefix entrusted.",
   "scripts": {
     "dev": "npm run dev --prefix entrusted",
-    "build": "npm run build --prefix entrusted && node -e \"const fs=require('node:fs');fs.rmSync('.next',{recursive:true,force:true});fs.cpSync('entrusted/.next','.next',{recursive:true})\"",
+    "build": "npm run build --prefix entrusted",
     "start": "npm run start --prefix entrusted",
     "lint": "npm run lint --prefix entrusted"
   }
