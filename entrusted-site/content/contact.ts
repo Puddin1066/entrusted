@@ -4,6 +4,7 @@ export const contactPage = {
     subheadline:
       "For bilingual psychological evaluations, consultation, and district support across Massachusetts and Rhode Island.",
   },
+  partnershipNote: "Currently accepting new partnerships for the 2026–2027 school year.",
   successMessage:
     "Thank you for reaching out. Your message has been received, and Entrusted will respond as soon as possible.",
 };

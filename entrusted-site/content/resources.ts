@@ -45,11 +45,6 @@ export const resourcesPage = {
     cta: "Open insights",
     href: "/blog",
   },
-  vendor: {
-    title: "Vendor Packet",
-    copy: "Download a packet with service overview, professional background, and key onboarding information.",
-    cta: "Download Vendor Packet",
-  },
   discuss: {
     title: "Need to discuss a district need?",
     cta: "Schedule Consultation",

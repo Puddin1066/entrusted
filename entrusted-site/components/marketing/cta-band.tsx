@@ -5,7 +5,7 @@ type Props = {
   headline: string;
   copy: string;
   primary: string;
-  secondary: string;
+  secondary?: string;
   primaryHref?: string;
   secondaryHref?: string;
   variant?: "light" | "dark";
@@ -44,19 +44,21 @@ export function CTABand({
               {primary}
             </Button>
           </Link>
-          <Link href={secondaryHref}>
-            <Button
-              type="button"
-              variant="secondary"
-              className={
-                isDark
-                  ? "border-white/40 bg-transparent text-white hover:bg-white/10"
-                  : ""
-              }
-            >
-              {secondary}
-            </Button>
-          </Link>
+          {secondary ? (
+            <Link href={secondaryHref}>
+              <Button
+                type="button"
+                variant="secondary"
+                className={
+                  isDark
+                    ? "border-white/40 bg-transparent text-white hover:bg-white/10"
+                    : ""
+                }
+              >
+                {secondary}
+              </Button>
+            </Link>
+          ) : null}
         </div>
       </div>
     </section>

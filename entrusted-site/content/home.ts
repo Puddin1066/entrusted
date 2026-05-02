@@ -2,12 +2,12 @@ export const homeContent = {
   hero: {
     eyebrow: "Bilingual School Psychology Services",
     headline:
-      "Bilingual School Psychology Evaluations for Massachusetts and Rhode Island Districts",
+      "Bilingual Psychological Evaluations and MLL-Informed Support for Schools and Educational Programs across Massachusetts and Rhode Island",
     subheadline:
-      "Supporting school districts with culturally responsive evaluations, multilingual learner assessment, behavioral consultation, and short-term evaluation support.",
+      "Supporting teams in distinguishing language difference from disability through culturally responsive evaluation practices.",
     badges: ["Bilingual", "Trauma-Informed", "Data-Driven", "EN / ES / PT"],
-    primaryCta: "Schedule a Consultation",
-    secondaryCta: "Download Vendor Packet",
+    primaryCta: "Request Availability",
+    secondaryCta: "View Services and Credentials",
     microcopy:
       "Available for district consultation, bilingual psychoeducational evaluations, and overflow support.",
   },
@@ -38,25 +38,52 @@ export const homeContent = {
   },
   servicesOverview: {
     title: "Services",
+    subtitle: "Serving Pre-K through Grade 12 across Massachusetts and Rhode Island.",
     cards: [
       {
-        title: "Bilingual Psychoeducational Evaluations",
-        body: "Comprehensive evaluations conducted with attention to linguistic, cultural, and educational context.",
+        title: "Bilingual Psychoeducational Evaluations (Spanish & Portuguese)",
+        body: "Supporting accurate identification for multilingual learners",
       },
       {
-        title: "Multilingual Learner Consultation",
-        body: "Support for teams distinguishing language acquisition, cultural difference, and disability-related concerns.",
+        title: "MLL-Informed Evaluation Support",
+        body:
+          "Including experience working with a variety of multilingual learners using culturally responsive assessment practices",
       },
       {
-        title: "Behavioral Assessment & FBA/BIP Support",
-        body: "Consultation, assessment, and behavioral support for students with complex school-based needs.",
+        title: "Short-Term Psych Coverage",
+        body: "Reliable support during staffing gaps and high-volume periods",
       },
       {
-        title: "Reevaluations & Meeting Participation",
-        body: "Reevaluation support, records review, reporting, and participation in IEP or related team meetings as requested.",
+        title: "FBA and Behavior Consultation",
+        body: "Function-based planning with practical, school-ready recommendations",
+      },
+      {
+        title: "Professional Development and Trainings",
+        body: "Workshops and team training tailored to district priorities, including:",
+        bullets: [
+          "Functional Behavioral Assessments (FBA)",
+          "Behavior Intervention Planning (BIP)",
+          "MLL-Informed Evaluation Practices",
+          "Distinguishing Language Difference vs Disability",
+        ],
       },
     ],
+    footerNote: "Flexible support designed to scale based on organizational needs.",
     cta: "View All Services",
+  },
+  testimonials: {
+    title: "Testimonials",
+    /** Anchor for in-page links, e.g. /#testimonials */
+    sectionId: "testimonials",
+    items: [
+      {
+        quote:
+          "Cliff Pereira is an outstanding psychological evaluator. His file reviews are thorough, and he makes sure to assess all areas of suspected disability. Cliff easily develops rapport with students and puts them at ease during the evaluation. His reports are well-written, timely, and offer valuable recommendations that can be used throughout the IEP development process. Cliff is knowledgeable about special education in both MA and RI and is an integral part of eligibility determination. Cliff is a valued member of evaluation teams due to his calm nature and breadth of knowledge. A natural educator, Cliff is able to explain his testing results in a way that educates parents while also reassuring them at the same time. As someone who worked in a public school with Cliff for many years I wholeheartedly recommend his evaluation services.",
+        attribution: "Shanon Stevens, Special Education Facilitator, Attleboro Public Schools",
+      },
+    ],
+    emptyMessage:
+      "Client testimonials will be added soon. In the meantime, Entrusted can provide professional references upon request.",
   },
   whyEntrusted: {
     title: "Why Entrusted",
@@ -78,6 +105,7 @@ export const homeContent = {
     paragraphs: [
       "Cliff is a bilingual school psychologist and founder of Entrusted School Psychology Services, LLC. He partners with Massachusetts and Rhode Island districts on culturally and linguistically responsive evaluations, MLL-informed assessment, and behavior consultation.",
       "His work helps teams differentiate language acquisition from disability, strengthen intervention planning, and keep evaluations both defensible and practically useful—from Pre-K through 12 in public, charter, and multilingual communities.",
+      "Entrusted School Psychology Services is a growing practice providing bilingual and MLL-informed evaluation and consultation services, partnering with school districts, educational programs, and specialized settings, with the capacity to expand support based on organizational needs.",
     ],
     cta: "Learn More About Cliff",
   },

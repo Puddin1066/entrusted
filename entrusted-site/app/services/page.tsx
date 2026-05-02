@@ -32,11 +32,9 @@ export default function ServicesPage() {
       </div>
       <CTABand
         headline={s.closing.headline}
-        copy="Reach out to discuss timelines, case types, and district needs—or download the vendor packet for onboarding."
+        copy="Reach out to discuss timelines, case types, and district needs."
         primary={s.closing.cta}
-        secondary="Download vendor packet"
         primaryHref="/contact"
-        secondaryHref="/vendor-packet"
         variant="light"
       />
     </>

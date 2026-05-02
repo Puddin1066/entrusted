@@ -16,11 +16,17 @@ export default function ContactPage() {
         <div className="mx-auto grid max-w-[1100px] gap-12 px-4 sm:px-6 lg:grid-cols-[minmax(0,340px)_1fr]">
           <aside className="h-fit rounded-xl border border-stone-200 bg-entrusted-sand/40 p-6 text-sm text-stone-700">
             <h2 className="font-serif text-lg font-semibold text-entrusted-navy">Contact</h2>
-            <dl className="mt-4 space-y-3">
+            <p className="mt-4 text-base font-medium leading-relaxed text-entrusted-navy">
+              {contactPage.partnershipNote}
+            </p>
+            <dl className="mt-6 space-y-3">
               <div>
                 <dt className="font-medium text-stone-600">Email</dt>
                 <dd>
-                  <a className="text-entrusted-navy underline" href={`mailto:${c.email}`}>
+                  <a
+                    className="break-all text-lg font-medium text-entrusted-navy underline"
+                    href={`mailto:${c.email}`}
+                  >
                     {c.email}
                   </a>
                 </dd>

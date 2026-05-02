@@ -160,21 +160,6 @@ export const pageSeo: Record<string, Metadata> = {
       url: "/contact",
     },
   },
-  "/vendor-packet": {
-    title: "Vendor Packet | District Onboarding (PDF)",
-    description: `Download the Entrusted vendor packet: service overview, bilingual school psychology scope, and district onboarding information for Massachusetts and Rhode Island programs.`,
-    keywords: [
-      "school psychology vendor packet",
-      "district vendor onboarding",
-      "special education contractor information",
-    ],
-    alternates: page("/vendor-packet"),
-    openGraph: {
-      title: "Vendor Packet | Entrusted",
-      description: `PDF overview for district procurement and special education leadership.`,
-      url: "/vendor-packet",
-    },
-  },
   "/thank-you": {
     title: "Thank You",
     robots: { index: false, follow: false },

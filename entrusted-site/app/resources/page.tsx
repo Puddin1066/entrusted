@@ -3,7 +3,6 @@ import { resourcesPage } from "@/content/resources";
 import { pageSeo } from "@/content/seo";
 import { PageHero } from "@/components/marketing/page-hero";
 import { SectionShell } from "@/components/layout/section-shell";
-import { VendorPacketCard } from "@/components/marketing/vendor-packet-card";
 import { Button } from "@/components/ui/button";
 import type { Metadata } from "next";
 
@@ -61,23 +60,16 @@ export default function ResourcesPage() {
         </div>
       </SectionShell>
       <section className="border-y border-stone-200 bg-entrusted-sand/40 py-16">
-        <div className="mx-auto max-w-[900px] px-4 sm:px-6">
-          <div className="grid gap-8 md:grid-cols-2 md:items-stretch">
-            <VendorPacketCard
-              title={r.vendor.title}
-              description={r.vendor.copy}
-              cta={r.vendor.cta}
-            />
-            <div className="flex flex-col justify-center rounded-xl border border-stone-200 bg-white p-8 shadow-sm">
-              <h2 className="font-serif text-2xl font-semibold text-entrusted-navy">
-                {r.discuss.title}
-              </h2>
-              <Link href="/contact" className="mt-6">
-                <Button type="button" className="w-full sm:w-auto">
-                  {r.discuss.cta}
-                </Button>
-              </Link>
-            </div>
+        <div className="mx-auto max-w-[520px] px-4 sm:px-6">
+          <div className="flex flex-col justify-center rounded-xl border border-stone-200 bg-white p-8 shadow-sm">
+            <h2 className="font-serif text-2xl font-semibold text-entrusted-navy">
+              {r.discuss.title}
+            </h2>
+            <Link href="/contact" className="mt-6">
+              <Button type="button" className="w-full sm:w-auto">
+                {r.discuss.cta}
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

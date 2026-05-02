@@ -65,7 +65,7 @@ export function Hero({
                 {primaryCta}
               </Button>
             </Link>
-            <Link href="/vendor-packet">
+            <Link href="/services">
               <Button type="button" variant="secondary" className="min-w-[200px] px-6 py-3">
                 {secondaryCta}
               </Button>

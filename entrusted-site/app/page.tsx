@@ -7,6 +7,7 @@ import { Hero } from "@/components/marketing/hero";
 import { ProcessSteps } from "@/components/marketing/process-steps";
 import { ResourcesPreview } from "@/components/marketing/resources-preview";
 import { ServicesGrid } from "@/components/marketing/services-grid";
+import { TestimonialsSection } from "@/components/marketing/testimonials-section";
 import { TrustStrip } from "@/components/marketing/trust-strip";
 import { WhyEntrusted } from "@/components/marketing/why-entrusted";
 import { BlogPreview } from "@/components/marketing/blog-preview";
@@ -39,9 +40,17 @@ export default function HomePage() {
       />
       <ServicesGrid
         title={h.servicesOverview.title}
+        subtitle={h.servicesOverview.subtitle}
         cards={h.servicesOverview.cards}
+        footerNote={h.servicesOverview.footerNote}
         ctaLabel={h.servicesOverview.cta}
         ctaHref="/services"
+      />
+      <TestimonialsSection
+        title={h.testimonials.title}
+        sectionId={h.testimonials.sectionId}
+        items={h.testimonials.items}
+        emptyMessage={h.testimonials.emptyMessage}
       />
       <WhyEntrusted
         title={h.whyEntrusted.title}
