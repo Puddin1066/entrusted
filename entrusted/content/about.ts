@@ -11,6 +11,7 @@ export const aboutPage = {
   /** First-person — matches professional LinkedIn voice. */
   intro: [
     "I am a bilingual school psychologist and founder of Entrusted School Psychology Services, LLC.",
+    "With over 20 years of experience in education — including 12 years in the classroom and over a decade as a school psychologist — I bring a deep understanding of both instruction and assessment to my work with school teams.",
     "I partner with school districts in Massachusetts and Rhode Island to provide culturally and linguistically responsive evaluations, MLL-informed assessment, and behavior consultation that support accurate, data-driven decision-making.",
     "In my work, I focus on helping teams differentiate between language acquisition and disability, strengthen intervention planning, and ensure evaluations are both defensible and practically useful.",
   ],
@@ -33,7 +34,8 @@ export const aboutPage = {
       "Professional licensure and verification details are available to districts upon request during onboarding.",
     items: [
       { label: "Role", value: "Founder & bilingual school psychologist, Entrusted School Psychology Services, LLC" },
-      { label: "Education", value: "Rhode Island College" },
+      { label: "Rhode Island College (RIC)", value: "M.A. & C.A.G.S. in School Psychology" },
+      { label: "Temple University", value: "B.S. in Secondary Education" },
       { label: "Languages", value: "English, Spanish, Portuguese (bilingual evaluation and consultation)" },
       { label: "Location", value: "Blackstone, Massachusetts · Service area: Massachusetts & Rhode Island" },
       {

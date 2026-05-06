@@ -28,7 +28,7 @@ export const site = {
   ctaPrimary: "Schedule Consultation",
   contactPlaceholder: {
     email: "cpereira@entrustedsps.com",
-    phone: "(000) 000-0000",
+    phone: "401-280-8377",
     responseTime: "We typically respond within 1–2 business days.",
     serviceArea: "Massachusetts & Rhode Island · Based in Blackstone, MA",
   },
