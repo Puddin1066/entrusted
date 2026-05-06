@@ -1,13 +1,15 @@
 import type { MetadataRoute } from "next";
 import { blogPosts } from "@/content/blog";
+import { regionPages } from "@/content/regions";
 
-const base = process.env.NEXT_PUBLIC_SITE_URL ?? "https://entrustedschoolpsychology.com";
+const base = process.env.NEXT_PUBLIC_SITE_URL ?? "https://entrustedsps.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const paths = [
     "",
     "/about",
     "/services",
+    "/service-areas",
     "/resources",
     "/blog",
     "/contact",
@@ -27,5 +29,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticEntries, ...blogEntries];
+  const regionEntries: MetadataRoute.Sitemap = regionPages.map((region) => ({
+    url: `${base}/service-areas/${region.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.75,
+  }));
+
+  return [...staticEntries, ...regionEntries, ...blogEntries];
 }

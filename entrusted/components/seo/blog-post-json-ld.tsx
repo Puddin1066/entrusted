@@ -2,7 +2,7 @@ import { site } from "@/content/site";
 import type { BlogPost } from "@/content/blog";
 
 const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://entrustedschoolpsychology.com";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://entrustedsps.com";
 
 export function BlogPostJsonLd({ post }: { post: BlogPost }) {
   const url = `${siteUrl}/blog/${post.slug}`;

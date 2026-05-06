@@ -10,7 +10,7 @@ export const homepageFaq = {
     {
       question: "Do you provide bilingual psychoeducational evaluations for Massachusetts and Rhode Island schools?",
       answer:
-        "Yes. Entrusted supports public districts, charter schools, and out-of-district programs across Massachusetts and Rhode Island with bilingual psychoeducational evaluations designed for multilingual learners and culturally responsive interpretation of results.",
+        "Yes. Entrusted supports public districts, charter schools, and out-of-district programs across Massachusetts and Rhode Island, including Greater Boston, Worcester County, the Blackstone Valley, and Providence-area communities, with bilingual psychoeducational evaluations designed for multilingual learners and culturally responsive interpretation of results.",
     },
     {
       question: "How do teams distinguish language acquisition from a disability in multilingual learner cases?",
@@ -20,12 +20,17 @@ export const homepageFaq = {
     {
       question: "Can Entrusted help with evaluation backlogs, triennials, or short-term district coverage?",
       answer:
-        "Yes. Districts often reach out when timelines are tight, staffing is stretched, or triennial and reevaluation workloads need reliable short-term support with clear reporting and meeting participation when requested.",
+        "Yes. Districts often reach out when timelines are tight, staffing is stretched, or triennial and reevaluation workloads need reliable short-term support with clear reporting and meeting participation when requested, including regional coverage needs across MA and RI.",
     },
     {
       question: "What does multilingual learner consultation include?",
       answer:
         "Consultation can cover test selection and interpretation, records review, team collaboration, and practical guidance when cases involve complex language backgrounds—so special education and evaluation teams can move forward with confidence.",
+    },
+    {
+      question: "What areas do you serve within Massachusetts and Rhode Island?",
+      answer:
+        "Entrusted is based in Blackstone, MA and partners with district teams across both states, commonly including Greater Boston, Worcester County, the Blackstone Valley, and Providence-area communities. Reach out to confirm fit for your district's location and timeline.",
     },
     {
       question: "Do you offer behavioral assessment or FBA and BIP support?",

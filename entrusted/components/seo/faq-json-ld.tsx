@@ -1,7 +1,7 @@
 import { homepageFaq } from "@/content/faq";
 
 const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://entrustedschoolpsychology.com";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://entrustedsps.com";
 
 export function FaqJsonLd() {
   const data = {

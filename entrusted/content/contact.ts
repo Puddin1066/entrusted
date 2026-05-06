@@ -2,7 +2,7 @@ export const contactPage = {
   hero: {
     headline: "Contact Entrusted",
     subheadline:
-      "For bilingual psychological evaluations, consultation, and district support across Massachusetts and Rhode Island.",
+      "For bilingual psychological evaluations, consultation, and district support across Massachusetts and Rhode Island, including Greater Boston, Worcester County, the Blackstone Valley, and Providence-area communities.",
   },
   partnershipNote: "Currently accepting new partnerships for the 2026–2027 school year.",
   successMessage:

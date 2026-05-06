@@ -2,11 +2,11 @@ export const resourcesPage = {
   hero: {
     headline: "Resources for Special Education Directors and District Evaluation Teams",
     subheadline:
-      "Practical support for multilingual learner assessment, evaluation backlog needs, and culturally responsive school psychology services.",
+      "Practical support for multilingual learner assessment, evaluation backlog needs, and culturally responsive school psychology services across Massachusetts and Rhode Island regional districts.",
   },
   whenReachOut: {
     title: "When Districts Reach Out",
-    copy: "District teams typically contact Entrusted when:",
+    copy: "District teams in MA and RI typically contact Entrusted when:",
     bullets: [
       "evaluation timelines are approaching compliance deadlines",
       "multilingual cases require more culturally responsive assessment",
@@ -29,13 +29,14 @@ export const resourcesPage = {
   },
   whatBrings: {
     title: "What Entrusted Brings",
-    copy: "Entrusted provides district teams with support that is responsive, culturally informed, and practical to implement in real school settings.",
+    copy: "Entrusted provides district teams with support that is responsive, culturally informed, and practical to implement in real school settings across urban, suburban, and regional collaborative programs.",
     bullets: [
       "bilingual expertise",
       "clear communication",
       "actionable written reports",
       "strong collaboration with district staff",
       "local service focus in Massachusetts and Rhode Island",
+      "regional familiarity across Greater Boston, Worcester County, and Providence-area districts",
     ],
   },
   insights: {

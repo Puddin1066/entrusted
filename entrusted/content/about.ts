@@ -12,7 +12,7 @@ export const aboutPage = {
   intro: [
     "I am a bilingual school psychologist and founder of Entrusted School Psychology Services, LLC.",
     "With over 20 years of experience in education — including 12 years in the classroom and over a decade as a school psychologist — I bring a deep understanding of both instruction and assessment to my work with school teams.",
-    "I partner with school districts in Massachusetts and Rhode Island to provide culturally and linguistically responsive evaluations, MLL-informed assessment, and behavior consultation that support accurate, data-driven decision-making.",
+    "I partner with school districts in Massachusetts and Rhode Island, including Greater Boston, Worcester County, the Blackstone Valley, and Providence-area communities, to provide culturally and linguistically responsive evaluations, MLL-informed assessment, and behavior consultation that support accurate, data-driven decision-making.",
     "In my work, I focus on helping teams differentiate between language acquisition and disability, strengthen intervention planning, and ensure evaluations are both defensible and practically useful.",
   ],
   principles: {

@@ -1,7 +1,7 @@
 import { site } from "@/content/site";
 
 const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://entrustedschoolpsychology.com";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://entrustedsps.com";
 
 export function JsonLd() {
   const professionalService = {
@@ -12,9 +12,19 @@ export function JsonLd() {
       "Bilingual school psychology services for Massachusetts and Rhode Island districts: psychoeducational evaluations, multilingual learner (MLL/EL) assessment consultation, culturally responsive reporting, triennial and reevaluation support, FBA/BIP and behavioral consultation, and IEP team participation.",
     slogan: "Bilingual, culturally responsive school psychology for MA & RI districts",
     url: siteUrl,
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: site.location.city,
+      addressRegion: site.location.state,
+      addressCountry: "US",
+    },
     areaServed: [
       { "@type": "State", name: "Massachusetts" },
       { "@type": "State", name: "Rhode Island" },
+      { "@type": "AdministrativeArea", name: "Greater Boston, MA" },
+      { "@type": "AdministrativeArea", name: "Worcester County, MA" },
+      { "@type": "AdministrativeArea", name: "Blackstone Valley, MA/RI" },
+      { "@type": "AdministrativeArea", name: "Providence County, RI" },
     ],
     serviceType: [
       "Educational consulting",
@@ -48,6 +58,9 @@ export function JsonLd() {
     areaServed: [
       { "@type": "State", name: "Massachusetts" },
       { "@type": "State", name: "Rhode Island" },
+      { "@type": "AdministrativeArea", name: "Greater Boston, MA" },
+      { "@type": "AdministrativeArea", name: "Worcester County, MA" },
+      { "@type": "AdministrativeArea", name: "Providence County, RI" },
     ],
     knowsAbout: [
       "Psychoeducational assessment",

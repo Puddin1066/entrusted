@@ -16,10 +16,11 @@ export const site = {
     country: "United States",
   },
   footerBlurb:
-    "Supporting Massachusetts and Rhode Island districts with bilingual, culturally responsive school psychology services.",
+    "Supporting Massachusetts and Rhode Island districts, including Greater Boston, Worcester County, the Blackstone Valley, and Providence-area communities, with bilingual, culturally responsive school psychology services.",
   nav: [
     { href: "/", label: "Home" },
     { href: "/services", label: "Services" },
+    { href: "/service-areas", label: "Service Areas" },
     { href: "/about", label: "About Cliff" },
     { href: "/resources", label: "Director Resources" },
     { href: "/blog", label: "Insights" },
@@ -30,6 +31,7 @@ export const site = {
     email: "cpereira@entrustedsps.com",
     phone: "401-280-8377",
     responseTime: "We typically respond within 1–2 business days.",
-    serviceArea: "Massachusetts & Rhode Island · Based in Blackstone, MA",
+    serviceArea:
+      "Massachusetts & Rhode Island · Regional focus: Greater Boston, Worcester County, Blackstone Valley, Providence area · Based in Blackstone, MA",
   },
 };

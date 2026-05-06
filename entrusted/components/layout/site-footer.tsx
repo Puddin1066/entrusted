@@ -28,6 +28,9 @@ export function SiteFooter() {
             <Link href="/contact" className="text-white hover:underline">
               Contact
             </Link>
+            <Link href="/service-areas" className="hover:underline">
+              Service areas
+            </Link>
             <Link href="/privacy" className="hover:underline">
               Privacy policy
             </Link>

@@ -2,14 +2,14 @@ export const homeContent = {
   hero: {
     eyebrow: "Bilingual School Psychology Services",
     headline:
-      "Bilingual Psychological Evaluations and MLL-Informed Support for Schools and Educational Programs across Massachusetts and Rhode Island",
+      "Bilingual Psychological Evaluations and MLL-Informed School Support across Massachusetts and Rhode Island",
     subheadline:
-      "Supporting teams in distinguishing language difference from disability through culturally responsive evaluation practices.",
+      "Supporting district teams from Greater Boston to Providence in distinguishing language difference from disability through culturally responsive evaluation practices.",
     badges: ["Bilingual", "Trauma-Informed", "Data-Driven", "EN / ES / PT"],
     primaryCta: "Request Availability",
     secondaryCta: "View Services and Credentials",
     microcopy:
-      "Available for district consultation, bilingual psychoeducational evaluations, and overflow support.",
+      "Available for district consultation, bilingual psychoeducational evaluations, and overflow support across MA/RI regional hubs.",
   },
   trustStrip: {
     headline:
@@ -34,7 +34,7 @@ export const homeContent = {
       "Teams navigating complex multilingual learner cases",
     ],
     closing:
-      "When timelines tighten or case complexity increases, districts need a provider who can step in quickly and communicate clearly.",
+      "When timelines tighten or case complexity increases, districts need a provider who can step in quickly and communicate clearly across regional teams.",
   },
   servicesOverview: {
     title: "Services",
